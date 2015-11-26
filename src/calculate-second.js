@@ -5,10 +5,6 @@ function calculate_median(arr) {
 
     var len = tempArr.length;
 
-    if (len % 2 == 1) {
-        return tempArr[(len - 1) / 2];
-    }
-    else {
-        return (tempArr[len / 2 - 1] + tempArr[len / 2]) / 2;
-    }
+    return len % 2 == 1 ? tempArr[(len-1)/2] :(tempArr[len / 2 - 1] + tempArr[len / 2]) / 2;
+
 }
